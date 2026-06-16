@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Focus Area 01 — Job Creation · see it work · Thames Laboratories</title>
+  <meta name="description" content="An asbestos survey order arrives by email — the agent reads the instruction and drafts the job in Theo, nested and SOR-rated, ready to confirm in seconds." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="stage" id="stage" data-step="0">
+
+    <div class="agentbadge" aria-hidden="true"><span class="agentbadge-dot"></span>AI&nbsp;agent&nbsp;·&nbsp;working autonomously</div>
+    <nav class="steps" id="steps" aria-label="Sequence">
+      <span class="step" data-s="1"><i></i>Inbox</span>
+      <span class="step-arr">›</span>
+      <span class="step" data-s="2"><i></i>Read&nbsp;order</span>
+      <span class="step-arr">›</span>
+      <span class="step" data-s="3"><i></i>Draft&nbsp;job</span>
+      <span class="step-arr">›</span>
+      <span class="step" data-s="4"><i></i>Confirm</span>
+    </nav>
+    <header class="hed" id="hed"><p class="hed-t" id="hedT">An asbestos survey order lands in the inbox.</p></header>
+
+    <div class="camera" id="camera">
+    <div class="scenes" id="scenes">
+
+      <!-- ── SCENE 1 — Gmail order inbox ──────────────────────────────── -->
+      <section class="card scene scene-inbox" id="sceneInbox" aria-label="Shared order inbox">
+        <div class="gm-bar">
+          <span class="gm-logo">
+            <svg viewBox="0 0 28 20" aria-hidden="true">
+              <path d="M2 4 h2.6 L14 12.2 L23.4 4 H26 v12 h-3 V8.1 L14 14.7 L5 8.1 V16 H2 Z" fill="#ea4335"/>
+              <path d="M2 4 v12 h3 V8.1 L2 5.8 Z" fill="#4285f4"/>
+              <path d="M23 8.1 V16 h3 V4 h-2.6 L23 5.8 Z" fill="#34a853"/>
+              <path d="M2 4 h2.6 L5 8.1 L2 5.8 Z" fill="#c5221f"/>
+              <path d="M26 4 h-2.6 L23 8.1 L26 5.8 Z" fill="#fbbc04"/>
+            </svg>
+            <em>Orders</em>
+          </span>
+          <span class="gm-search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg>Search the shared inbox</span>
+          <span class="gm-av">TL</span>
+        </div>
+        <div class="gm-tabs"><span class="gm-tab is-on">Primary</span><span class="gm-tab">Programmes</span><span class="gm-tab">All&nbsp;mail</span></div>
+        <ul class="gm-list">
+          <li class="gm-row gm-hot" id="gmHot">
+            <span class="gm-av-r on">OH</span>
+            <div class="gm-bd">
+              <div class="gm-h"><b>Ongo Homes · Asset Management</b><span>now</span></div>
+              <div class="gm-sub">Asbestos survey instruction — 3 UPRNs</div>
+              <div class="gm-s">Please arrange refurbishment surveys at the addresses attached.</div>
+              <span class="gm-att" id="gmAtt"><svg viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></svg>survey-instruction.pdf<em>&nbsp;·&nbsp;3 pages</em></span>
+            </div>
+            <span class="gm-new">NEW</span>
+          </li>
+          <li class="gm-row gm-read"><span class="gm-av-r c-grey">TH</span><div class="gm-bd"><div class="gm-h"><b>Theo · Programme reminder</b><span>08:50</span></div><div class="gm-s">Planned batch B0014 due for booking — 12 jobs</div></div><span class="gm-star" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l2.6 6.3 6.8.5-5.2 4.4 1.6 6.6L12 17.8 6.2 20.8l1.6-6.6L2.6 9.8l6.8-.5z"/></svg></span></li>
+          <li class="gm-row gm-read"><span class="gm-av-r c-blue">BP</span><div class="gm-bd"><div class="gm-h"><b>BPHA · Compliance</b><span>Yest</span></div><div class="gm-s">Query: quote Q0231 — re-test pricing</div></div><span class="gm-star on" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l2.6 6.3 6.8.5-5.2 4.4 1.6 6.6L12 17.8 6.2 20.8l1.6-6.6L2.6 9.8l6.8-.5z"/></svg></span></li>
+          <li class="gm-row gm-read"><span class="gm-av-r c-purple">LQ</span><div class="gm-bd"><div class="gm-h"><b>L&amp;Q · Asset team</b><span>Yest</span></div><div class="gm-s">PO confirmation — routine programme</div></div><span class="gm-star" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l2.6 6.3 6.8.5-5.2 4.4 1.6 6.6L12 17.8 6.2 20.8l1.6-6.6L2.6 9.8l6.8-.5z"/></svg></span></li>
+        </ul>
+      </section>
+
+      <!-- ── SCENE 2 — instruction PDF ────────────────────────────────── -->
+      <section class="card scene scene-pdf" id="scenePdf" aria-label="The survey instruction">
+        <div class="pdf-bar">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></svg>
+          <span class="pdf-name">survey-instruction.pdf</span>
+          <span class="pdf-page-tag">1 of 3 · UPRN 4231</span>
+        </div>
+        <div class="pdf-page">
+          <div class="pdf-title">Asbestos Survey Instruction<span>Ongo Homes</span></div>
+          <div class="pdf-meta"><span><b>REF</b> OH-IN-90244</span><span><b>RAISED</b> 09/06/26</span><span><b>PO</b> OH-PO-55180</span></div>
+          <div class="pdf-sech">Property</div>
+          <div class="pdf-grid">
+            <div class="pdf-kv" data-f="client"><span>Client</span><b>Ongo Homes</b></div>
+            <div class="pdf-kv" data-f="uprn"><span>UPRN</span><b>4231</b></div>
+            <div class="pdf-kv wide" data-f="address"><span>Address</span><b>45 Jeffrey Lane, Belton, Doncaster, DN9 1LU</b></div>
+          </div>
+          <div class="pdf-sech">Survey scope</div>
+          <div class="pdf-grid">
+            <div class="pdf-kv" data-f="surveytype"><span>Survey type</span><b>Refurbishment</b></div>
+            <div class="pdf-kv" data-f="purpose"><span>Purpose</span><b>M&amp;T</b></div>
+            <div class="pdf-kv wide" data-f="element"><span>Specified element</span><b>Bathroom — test under flooring &amp; ceilings</b></div>
+          </div>
+          <div class="pdf-foot">Please survey the property under CAR 2012 and return an accredited report to the asset team.</div>
+          <div class="pdf-sig"><span>Signed</span><svg viewBox="0 0 120 24"><path d="M2 16 q4 -12 9 -6 q5 6 9 -3 q4 -9 8 0 q4 8 8 -3 q4 -10 8 1 q4 9 8 -4 q3 -8 7 1 q4 9 7 -3 q3 -7 6 1" fill="none" stroke="#502878" stroke-width="1.3" stroke-linecap="round"/></svg><em>R. Akhtar · Ongo</em></div>
+        </div>
+      </section>
+
+      <!-- ── SCENE 3/4 — Theo "New Job" ───────────────────────────────── -->
+      <section class="card scene scene-theo" id="sceneTheo" aria-label="The job, drafted in Theo">
+        <div class="theo-top">
+          <img class="theo-logo" src="theo-logo.png" alt="Theo" />
+          <span class="theo-top-bc">Projects · <b>P0006</b> Routine Safety Inspection Programme · Batch B0005</span>
+          <span class="theo-top-r">
+            <span class="theo-top-user"><b>Maureen Donoghue</b><em>maureen.donoghue@thameslabs</em></span>
+            <span class="theo-top-btn">Show Taskbar</span><span class="theo-top-btn">Logout</span>
+          </span>
+        </div>
+        <div class="theo-body">
+          <nav class="theo-nav" aria-hidden="true">
+            <span class="theo-nv head"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3.5 19c0-3 2.7-5 5.5-5s5.5 2 5.5 5"/></svg>Clients</span>
+            <span class="theo-sub"><span class="theo-sv">Leads</span><span class="theo-sv">Quotes</span><span class="theo-sv">Sites</span></span>
+            <span class="theo-nv head"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="1.5"/><path d="M4 9h16M9 4v16"/></svg>Projects</span>
+            <span class="theo-sub"><span class="theo-sv on">Jobs</span><span class="theo-sv">Samples</span><span class="theo-sv">Analysis</span><span class="theo-sv">Quality Assurance</span><span class="theo-sv">Reports</span></span>
+            <span class="theo-nv"><svg viewBox="0 0 24 24"><path d="M5 4h14v17l-4-3-3 3-3-3-4 3z"/></svg>Invoices</span>
+            <span class="theo-nv"><svg viewBox="0 0 24 24"><path d="M9 11l3 3 8-8M4 12v7h16"/></svg>Tasks</span>
+            <span class="theo-nv"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="1.5"/><path d="M3 9h18M8 4V2M16 4V2"/></svg>Calendar</span>
+            <span class="theo-nv"><svg viewBox="0 0 24 24"><path d="M4 19V5h16M8 15v-3M12 15V8M16 15v-5"/></svg>Dashboards</span>
+            <span class="theo-nv"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19 12a7 7 0 0 0-.1-1l2-1.6-2-3.4-2.4 1a7 7 0 0 0-1.7-1l-.3-2.5h-4l-.3 2.5a7 7 0 0 0-1.7 1l-2.4-1-2 3.4 2 1.6a7 7 0 0 0 0 2l-2 1.6 2 3.4 2.4-1a7 7 0 0 0 1.7 1l.3 2.5h4l.3-2.5a7 7 0 0 0 1.7-1l2.4 1 2-3.4-2-1.6a7 7 0 0 0 .1-1z"/></svg>System</span>
+          </nav>
+
+          <div class="theo-main">
+            <div class="theo-h1">New Job for project <em>Routine Safety Inspection Programme</em> <span>(P0006)</span></div>
+
+            <div class="theo-rowx">
+              <div class="tf">
+                <span class="tf-l">Batch <span class="req">*</span></span>
+                <div class="tf-row"><div class="tf-inp empty" id="tfBatch"><span class="tick"></span><span class="v">B0005</span></div><span class="tf-btn">Add Batch</span></div>
+              </div>
+              <div class="tf">
+                <span class="tf-l">Site <span class="req">*</span></span>
+                <div class="tf-row"><div class="tf-inp empty" id="tfSite"><span class="tick"></span><span class="v">45 Jeffrey Lane, DN9 1LU</span></div><span class="tf-btn">Add Site</span></div>
+              </div>
+            </div>
+            <div class="tf-links" id="tfLinks"><span class="h">Other active jobs on site</span> &nbsp;<span class="d">·</span> <a>R0303 Routine Inspection Programme</a> <span class="d">·</span> <a>J0019 Job&nbsp;2</a></div>
+
+            <div class="theo-sech">Contact details</div>
+            <div class="theo-rowx cols3">
+              <div class="tf"><span class="tf-l">Contact name <span class="req">*</span></span><div class="tf-inp empty" id="tfContact"><span class="tick"></span><span class="v">R. Akhtar</span></div></div>
+              <div class="tf"><span class="tf-l">Phone</span><div class="tf-inp empty" id="tfPhone"><span class="tick"></span><span class="v">01724 555 218</span></div></div>
+              <div class="tf"><span class="tf-l">Email</span><div class="tf-inp empty" id="tfEmail"><span class="tick"></span><span class="v">assets@ongo.co.uk</span></div></div>
+            </div>
+
+            <div class="theo-sech">Job details</div>
+            <div class="theo-rowx">
+              <div class="tf"><span class="tf-l">Purchase Order <span class="req">*</span></span><div class="tf-inp empty" id="tfPo"><span class="tick"></span><span class="v">OH-PO-55180</span></div></div>
+              <div class="tf"><span class="tf-l">Work type</span><div class="tf-inp empty" id="tfWork"><span class="tick"></span><span class="v">Refurbishment Survey</span></div></div>
+              <div class="tf"><span class="tf-l">SOR <span class="req">*</span></span><div class="tf-inp empty" id="tfSor"><span class="tick"></span><span class="v">W04 — Refurb &amp; M&amp;T</span></div></div>
+              <div class="tf">
+                <span class="tf-l">Suggested Rate</span>
+                <div class="tf-inp empty" id="tfRate"><span class="tick"></span><span class="v theo-rate">£196.00 / £0.00</span></div>
+                <div class="theo-elem"><span class="el">SOR elements ▾ · Inspection point elements ▾ · Room elements ▾</span></div>
+              </div>
+            </div>
+            <div class="theo-checks">
+              <span class="theo-chk on" id="chk2p"><i></i>2 Person</span>
+              <span class="theo-chk"><i></i>Per Day / Booking</span>
+              <span class="theo-chk"><i></i>Per Engineer</span>
+              <span class="theo-chk"><i></i>Fixed Cost</span>
+              <span class="theo-chk"><i></i>Multiply If Exceeds Duration</span>
+            </div>
+
+            <div class="theo-foot">
+              <span class="theo-chip" id="theoChip"><span class="pip"></span>Order matched · ready to confirm</span>
+              <span class="theo-flagnote">Odd order? <b>flagged → admin</b></span>
+              <button class="theo-submit" id="theoSubmit" type="button">Submit</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── SCENE 5 — payoff ─────────────────────────────────────────── -->
+      <section class="scene scene-payoff" id="scenePayoff" aria-label="Result">
+        <div class="payoff-eyebrow">Order handled — autonomously</div>
+        <h2 class="payoff-hero">From the inbox.<br>Into Theo. <em>Untouched.</em></h2>
+        <p class="payoff-stat"><span id="counter">11.0</span><span class="payoff-unit">s</span><em>· no one keyed it</em></p>
+        <p class="payoff-sub">UPRN 4231 · Ongo Homes · drafted in Theo, nested &amp; SOR-rated · across 26,000 jobs a year</p>
+        <span class="payoff-pill"><span class="pip"></span>~870 hours a year — back</span>
+      </section>
+
+    </div><!-- /scenes -->
+
+    <div class="cursor" id="cursor" aria-hidden="true">
+      <span class="cursor-ring" id="cursorRing"></span>
+      <svg class="cursor-svg" viewBox="0 0 24 24"><path d="M4 2.5 L4 19.5 L8.7 14.8 L12.2 22 L14.9 20.7 L11.4 13.5 L18 13.5 Z"/></svg>
+      <span class="cursor-tag">agent</span>
+    </div>
+    </div><!-- /camera -->
+
+    <div class="markrow"><span class="brandmark" aria-hidden="true"></span><span class="brandtxt">Thames Laboratories <em>· Finian Advisory</em></span></div>
+    <span class="illnote">Illustrative — depicts the Theo workflow</span>
+    <button class="replay" id="replay" type="button" aria-label="Replay">
+      <svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7M3 4v5h5"/></svg><span>Replay</span>
+    </button>
+
+  </main>
+  <script src="demo.js" defer></script>
+</body>
+</html>

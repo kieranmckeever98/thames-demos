@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thames Laboratories — automation demos · Finian Advisory</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --purple:#502878; --purple-2:#5e338a; --teal:#00A078; --teal-dark:#008C6E;
+      --ink:#1A1330; --grey:#6B6478; --grey-2:#8a8497; --mint-soft:#F2FAF6; --line:rgba(30,20,50,0.12);
+      --gothic:"Century Gothic","CenturyGothic","Jost","Futura","Trebuchet MS",system-ui,sans-serif;
+    }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:var(--gothic); color:var(--ink); background:radial-gradient(1100px 600px at 50% -10%, #fff, transparent 60%), #ece8f2; -webkit-font-smoothing:antialiased; padding:48px 20px 80px; }
+    .wrap { max-width:1320px; margin:0 auto; }
+    .top { text-align:center; margin-bottom:44px; }
+    .eb { display:inline-flex; align-items:center; gap:8px; font-size:11px; font-weight:700; letter-spacing:0.24em; text-transform:uppercase; color:var(--purple); border:1px solid rgba(80,40,120,0.22); border-radius:999px; padding:5px 14px; }
+    .eb .dot { width:13px; height:13px; border-radius:50%; background:var(--purple); position:relative; box-shadow:0 0 0 3px rgba(80,40,120,0.13); }
+    .eb .dot::after { content:""; position:absolute; inset:3.5px; border-radius:50%; background:var(--teal); }
+    h1 { font-size:clamp(28px,4vw,42px); font-weight:700; margin-top:18px; letter-spacing:-0.015em; }
+    h1 em { font-style:normal; color:var(--purple); }
+    .lede { font-size:clamp(14px,1.6vw,17px); color:var(--grey); margin-top:12px; max-width:720px; margin-left:auto; margin-right:auto; line-height:1.5; }
+    .grid { display:flex; flex-direction:column; gap:56px; align-items:center; }
+    .item { width:100%; max-width:1280px; }
+    .cap { display:flex; align-items:baseline; gap:12px; margin:0 0 12px 4px; flex-wrap:wrap; }
+    .cap .no { font-size:12px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--teal-dark); }
+    .cap h2 { font-size:clamp(17px,2vw,22px); font-weight:700; color:var(--purple); }
+    .cap p { font-size:13.5px; color:var(--grey); flex:1; min-width:240px; }
+    .frame { position:relative; border-radius:16px; overflow:hidden; box-shadow:0 36px 80px -34px rgba(40,20,70,0.42), 0 6px 20px -10px rgba(40,20,70,0.16); border:1px solid rgba(0,0,0,0.06); background:#000; aspect-ratio:1280/720; }
+    .frame iframe { position:absolute; inset:0; width:100%; height:100%; border:0; display:block; }
+    .frame a.open { position:absolute; right:14px; top:14px; z-index:3; font-size:11px; font-weight:700; letter-spacing:0.03em; color:#fff; background:rgba(80,40,120,0.92); border-radius:999px; padding:6px 13px; text-decoration:none; box-shadow:0 6px 16px -6px rgba(40,20,70,0.5); opacity:0; transition:opacity .2s; }
+    .frame:hover a.open { opacity:1; }
+    .foot { text-align:center; margin-top:60px; font-size:12px; color:var(--grey-2); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <span class="eb"><span class="dot"></span>Thames Laboratories · AI Audit</span>
+      <h1>Four edges, made <em>agentic</em>.</h1>
+      <p class="lede">Theo is the system of record. The repetitive human work lives at the edges between Theo and Gmail, the phone, TEAMS and the lab. Each demo takes one edge and shows an agent doing the bridging work — with a person always confirming or signing.</p>
+    </header>
+
+    <div class="grid">
+      <section class="item">
+        <div class="cap"><span class="no">Focus Area 01</span><h2>Job Creation</h2><p>An order arrives by email; the agent reads it and drafts the job into Theo — nested, SOR-rated, ready for the admin to confirm.</p></div>
+        <div class="frame"><a class="open" href="fa1-job-creation/" target="_blank" rel="noopener">Open ↗</a><iframe src="fa1-job-creation/" title="FA1 — Job Creation" loading="lazy"></iframe></div>
+      </section>
+
+      <section class="item">
+        <div class="cap"><span class="no">Focus Area 02</span><h2>Diary &amp; Appointment Setting</h2><p>The agent phones the resident — a real AI voice call — agrees a slot (and reschedules when needed), captures access &amp; consent, and writes the booking into Theo. Sensitive calls stay human.</p></div>
+        <div class="frame"><a class="open" href="fa2-book-the-survey/" target="_blank" rel="noopener">Open ↗</a><iframe src="fa2-book-the-survey/" title="FA2 — Diary &amp; Appointment Setting" loading="lazy"></iframe></div>
+      </section>
+
+      <section class="item">
+        <div class="cap"><span class="no">Focus Area 03</span><h2>AI Report QA Checker</h2><p>TEAMS produces the report; the agent checks every section, makes the edits in the document (scores, comments, ID basis, photos), and the accredited analyst still signs.</p></div>
+        <div class="frame"><a class="open" href="fa3-qa-the-report/" target="_blank" rel="noopener">Open ↗</a><iframe src="fa3-qa-the-report/" title="FA3 — AI Report QA Checker" loading="lazy"></iframe></div>
+      </section>
+    </div>
+
+    <p class="foot">Illustrative demos · Finian Advisory for Thames Laboratories · the human always confirms or signs</p>
+  </div>
+</body>
+</html>
